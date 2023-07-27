@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Button } from "../Button/Button"
 
 const Navbar = () => {
   return (
@@ -12,8 +13,19 @@ const Navbar = () => {
           />
         </div>
         <div className="flex flex-row justify-around items-center gap-4">
-            <div>Florianópolis/SC</div>
-            <div>Cart</div>
+            <div>
+              <Button
+                styles="purpleButton"
+              >
+                Florianópolis,SC
+              </Button>
+            </div>
+            <div>
+              <Button
+                iconName="yellowCart"
+                styles="yellowButton"
+              />
+            </div>
         </div>
     </div>
   )
