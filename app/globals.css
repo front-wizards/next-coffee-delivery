@@ -8,7 +8,7 @@
   }
 
   .yellowButton {
-    @apply p-2 border-2 rounded-lg bg-[#F1E9C9] text-white;
+    @apply p-2 border-2 rounded-lg bg-[#F1E9C9] text-black;
   }
 
 }
