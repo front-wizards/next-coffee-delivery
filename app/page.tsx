@@ -1,8 +1,9 @@
+import Intro from "./components/Intro/Intro";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center w-[1440px]">
-      Next coffee delivery
+    <main className="flex justify-center items-center max-w-[1440px] w-full">
+      <Intro/>
     </main>
   )
 }

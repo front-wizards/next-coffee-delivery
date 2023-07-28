@@ -7,7 +7,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="flex justify-between items-center w-[1440px] py-8">
+    <div className="flex justify-center sm:justify-between items-center max-w-[1440px] py-8 w-full sm:px-[160px]">
         <div>
           <Link href="/">
             <Image
@@ -18,7 +18,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="flex flex-row justify-around items-center gap-4">
+        <div className="hidden sm:flex sm:flex-row sm:justify-around sm:items-center gap-4">
             <div>
               <Button
                 iconName={'purpleMap'}
