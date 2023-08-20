@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <main className="flex flex-col items-center justify-center w-full">
+        <main className="flex flex-col items-center justify-center w-full" >
           <Navbar />
           {children}
         </main>
