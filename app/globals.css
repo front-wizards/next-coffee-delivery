@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .purpleButton {
+    @apply p-2 border-2 rounded-lg bg-[#EBE5F9] text-[#4B2995];
+  }
+
+  .yellowButton {
+    @apply p-2 border-2 rounded-lg bg-[#F1E9C9] text-black;
+  }
+
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-color: #FAFAFA;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +30,11 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background-color: var(--background-color);
 }
